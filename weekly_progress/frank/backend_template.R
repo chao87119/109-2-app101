@@ -43,7 +43,7 @@ heritage <-
 # show by county --------------------------------------------
 # App function: user wants to zoom into map that shows only the point of interests belong to certain county
 # when select choose by county on APP, it calls
-heritage$show_county <-
+heritage$show_county <- 
 heritage$show_county() -> user$sessionData$county_chosen
 # which returns a character vector of counties on screen
 #  1. prompt names of counties that he can choose on screen

@@ -11,7 +11,8 @@ puzzle_guess <- function(){
                                                       "3. hard "),
                                      default = "")
        heritages_index <- sample(1:982,4,replace = F)
-       pic <- generate_puzzle(as.numeric(lv),heritages_index)
+       level <- c(3,5,9)
+       pic <- generate_puzzle(level[as.numeric(lv)],heritages_index)
        imageShow(pic)
        guess_order <- {
                          order <- sample(1:4,4,replace = F)
