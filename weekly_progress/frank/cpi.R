@@ -23,7 +23,7 @@ data$select$categories$data %>%
               function(x) {
                   for(rows in seq_along(x)){
                      if(rows<=length(x)-12){
-                        (x[rows+1] - x[rows]) / x[rows]*100 -> x[rows]
+                        (x[rows+12] - x[rows]) / x[rows]*100 -> x[rows]
                      }
                   }
                   x
